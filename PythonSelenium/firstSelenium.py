@@ -71,4 +71,9 @@ for x in range(2, 12, 1):
 
 print(summation)
 
-driver.quit()
+driver.execute_script("window.scrollBy(0,500)")
+time.sleep(3)
+
+driver.execute_script("document.querySelector('.tableFixHead').scrollTop=5000")
+
+# driver.quit()
